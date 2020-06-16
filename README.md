@@ -8,7 +8,7 @@ This allows large datasets of activity from hundreds of neurons to be generated,
 Our paper on the subject can be found ...
 
 
-##Requirements
+## Requirements
 
 Anaconda - Tested with Ver. 4.8.3
 
@@ -24,9 +24,23 @@ caiman
 
 Can be downloaded and installed using the provided .yml files for Windows10, MacOS, and Ubuntu
 
-##Installation Guide
+## Installation Guide
 
-##Usage
+Anaconda can (and most likely should) be used to create an environment and install the required dependencies to use this code.
+
+* Download this repository as a zip and extract the files
+* Open the Anaconda Prompt and navigate (using the cd command) into the installation folder of the repository. For example:
+  * `< cd Desktop>`
+  * `<cd Hydra_CalciumImaging_Analysis\Installation`>
+* Create the Anaconda Environment using:
+
+```bash
+conda env create --file hydra_env_win10.txt
+```
+
+Using the correct .txt file for your operating system.
+
+## Usage
 
 **Getting Started**
 
