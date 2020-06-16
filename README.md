@@ -10,19 +10,14 @@ Our paper on the subject can be found ...
 
 ## Requirements
 
-Anaconda - Tested with Ver. 4.8.3
+[Anaconda](https://www.anaconda.com/) - Tested with Ver. 4.8.3
+  * If using an alternate Anaconda version different commands may be needed to generate an environment from the provided .txt files.
 
-FFMPeg
+[FFMPeg](https://ffmpeg.org/download.html)
 
-ICY
+[Icy](http://icy.bioimageanalysis.org/)
+  * Additional plugins for ICY may be required - please contact for details
 
-caiman
-
--note: if installing new packages to add to the code base, use the guide from caiman to ensure only conda-forge channel is used (recommended installations)
-
-**Dependencies**
-
-Can be downloaded and installed using the provided .yml files for Windows10, MacOS, and Ubuntu
 
 ## Installation Guide
 
@@ -30,8 +25,8 @@ Anaconda can (and most likely should) be used to create an environment and insta
 
 * Download this repository as a zip and extract the files
 * Open the Anaconda Prompt and navigate (using the cd command) into the installation folder of the repository. For example:
-  * `< cd Desktop>`
-  * `<cd Hydra_CalciumImaging_Analysis\Installation`>
+  * `cd Desktop`
+  * `cd Hydra_CalciumImaging_Analysis\Installation`
 * Create the Anaconda Environment using:
 
 ```bash
@@ -40,8 +35,16 @@ conda env create --file hydra_env_win10.txt
 
 Using the correct .txt file for your operating system.
 
-## Usage
+For more information on installation, and for installing additional packages, see [here]
+
+## Using the Pipeline
 
 **Getting Started**
 
 **Usage and Development**
+
+## Acknowledgements
+
+### Dependencies
+
+Can be downloaded and installed using the provided .txt files for Windows10, MacOS, and Ubuntu
