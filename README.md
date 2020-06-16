@@ -11,12 +11,23 @@ Our paper on the subject can be found ...
 ## Requirements
 
 [Anaconda](https://www.anaconda.com/) - Tested with Ver. 4.8.3
-  * If using an alternate Anaconda version different commands may be needed to generate an environment from the provided .txt files.
+
+Used for package management and installation of the required dependencies for this project. Other environment managers could also be used.
+---
+  **NOTE** If using an alternate Anaconda version, different commands may be needed to generate an environment from the provided .txt files.
+---
 
 [FFMPeg](https://ffmpeg.org/download.html)
 
+Provides support for the image processing tools in this package.
+
 [Icy](http://icy.bioimageanalysis.org/)
-  * Additional plugins for ICY may be required - please contact for details
+
+Provides the point tracking algorithm used to track neurons throughout a recording.
+
+---
+  **NOTE** Additional plugins for ICY may be required - please see the full [installation guide](Installation/README.md) for details.
+---
 
 
 ## Installation Guide
@@ -30,12 +41,11 @@ Anaconda can (and most likely should) be used to create an environment and insta
 * Create the Anaconda Environment using:
 
 ```bash
-conda env create --file hydra_env_win10.txt
+conda create --name Hydra_Analysis --file hydra_env_win10.txt
 ```
-
 Using the correct .txt file for your operating system.
 
-For more information on installation, and for installing additional packages, see [here]
+For more information on installation, and for installing additional packages, see [here](Installation/README.md)
 
 ## Using the Pipeline
 
