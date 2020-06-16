@@ -25,7 +25,7 @@ Provides back-end support for the image-processing tools used in this package.
 
 Provides the point tracking algorithm used to track neurons throughout a recording.
 
-  **_NOTE_** Additional plugins for ICY may be required - please see the full [installation guide](Installation) for details.
+  **_NOTE:_** Additional plugins for ICY may be required - please see the full [installation guide](Installation) for details.
 
 
 ## Installation Guide
@@ -33,7 +33,7 @@ Provides the point tracking algorithm used to track neurons throughout a recordi
 Anaconda can (and most likely should) be used to create an environment and install the required dependencies to use this code.
 
 * Download this repository as a zip and extract the files
-* Open the Anaconda Prompt and navigate (using the cd command) into the installation folder of the repository. For example:
+* Open the Anaconda Prompt and navigate into the installation folder of the repository. For example:
   * `cd Desktop`
   * `cd Hydra_CalciumImaging_Analysis\Installation`
 * Create the Anaconda Environment using:
@@ -47,12 +47,16 @@ For more information on installation, and for installing additional packages, se
 
 ## Using the Pipeline
 
-**Getting Started**
+###Getting Started
 
-**Usage and Development**
+The pipeline is designed to analyse videos generated from a 2-colour line of Hydra, expressing both a calcium-sensitive indicator and a calcium insensitive indicator in their neurons. Once a recording has been taken of both channels using a 2-colour microscope, the calcium insensitive recording should be imported into Icy and its spot tracker function used. The results of this can be exported as a .csv file for analysis with this program. Note, trimming videos in icy will result in more neurons being tracked. There is an inverse relationship between length of video and number of points tracked successfully. The video recordings should be converted into .avi files prior to starting analysis.
+
+Once this is complete the two .avi files (one for each colour channel) and the .csv from Icy can be used to analyse the neural activity.
+
+###Usage and Development
 
 ## Acknowledgements
 
 ### Dependencies
 
-Can be downloaded and installed using the provided .txt files for Windows10, MacOS, and Ubuntu
+The initial code base for this project utilises the [CaImAn](https://github.com/flatironinstitute/CaImAn) package for its spike deconvolution functionality.
