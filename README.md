@@ -49,9 +49,13 @@ For more information on installation, and for installing additional packages, se
 
 ## Using the Pipeline
 
-### Getting Started
+### Acquiring Data
 
 The pipeline is designed to analyse videos generated from a 2-colour line of Hydra, expressing both a calcium-sensitive indicator and a calcium insensitive indicator in their neurons. Once a recording has been taken of both channels using a 2-colour microscope, the calcium insensitive recording should be imported into Icy and its spot tracker function used. The results of this can be exported as a .csv file for analysis with this program. Note, trimming videos in icy will result in more neurons being tracked. There is an inverse relationship between length of video and number of points tracked successfully. The video recordings should be converted into .avi files prior to starting analysis. Once this is complete the two .avi files (one for each colour channel) and the .csv from Icy can be used to analyse the neural activity.
+
+More information can be found on setting up and using Icy [here](Installation), and information on the imaging of specimens for analysis is provided in our paper.
+
+### Getting Started
 
 To test your installation and see how the code is designed to work, an [example dataset](Example_Data) is provided. This can be used with the provided jupyter notebook (Single_Cell_Hydra_Analysis.ipynb).
 
@@ -78,7 +82,7 @@ Once the notebook is opened most of the user input will be choosing parameters a
 
 * Update the paths for the two .avi files and the .csv file from icy to where they are stored on your machine.
 
-**_NOTE:_** Paths on a windows machine need an r character preceding them to be read correctly, i.e.: r"c:\\user\files"
+**_NOTE:_** Paths on a windows machine need an r character preceding them to be read correctly, i.e. r"c:\\user\files"
 
 * Update the path to FFMPeg in the import cell. Copy and paste the path to the bin folder in the FFMPeg folder wherever that is on your machine. I would recommend resetting the kernel in the notebook after updating this path then re-running the cells from the beginning.
 
