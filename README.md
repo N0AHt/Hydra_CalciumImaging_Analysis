@@ -64,7 +64,7 @@ Although this notebook is designed to contain ample internal instruction for its
   ```bash
   conda activate Hydra_Analysis
   ```
-5. Use the terminal to open Jupyter (note that jupyter requires a browser - i.e. google chrome - to run):
+5. Open Jupyter (note that jupyter requires a browser - i.e. google chrome - to run):
   ```bash
   jupyter notebook
   ```
@@ -72,11 +72,17 @@ Although this notebook is designed to contain ample internal instruction for its
 
 **_NOTE:_** Jupyter may also be opened using the Anaconda Navigator - making sure to change environments using the drop down tab in the application before opening Jupyter.
 
-### Procedure
+### Using the Notebook
 
-Once the notebook is opened most of the user input will be choosing parameters and entering the paths to the files you want to analyse.
+Once the notebook is opened most of the user input will be choosing parameters and entering the paths to the files you want to analyse. Most information is contained within the notebook, but some key points are:
 
-1. 
+* Update the paths for the two .avi files and the .csv file from icy to where they are stored on your machine.
+
+**_NOTE:_** Paths on a windows machine need an r character preceding them to be read correctly, i.e.: r"c:\\user\files"
+
+* Update the path to FFMPeg in the import cell. Copy and paste the path to the bin folder in the FFMPeg folder wherever that is on your machine. I would recommend resetting the kernel in the notebook after updating this path then re-running the cells from the beginning.
+
+* Much of the other user input will be setting parameters to optimise your results. There are cells at the end of the notebook to evaluate these parameters and aid you in tuning the notebook to your data. It is recommended to run the notebook once then go back and tune each parameter individually, then reset the kernel and run the notebook again.
 
 ## Acknowledgements
 other paper...
